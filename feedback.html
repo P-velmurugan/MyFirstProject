@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <header>
+        Food Delivery App
+        <a href="./index.html" id="spanSample" style="
+          font-size: 14px;
+          color: whitesmoke;
+          letter-spacing: 2px;
+          font-style: italic;
+          cursor: pointer;
+        ">Back</a>
+    </header>
+    <style>
+        form{
+            background-color: rgb(255, 251, 251);
+            padding: 20px 25px;
+            margin-top: 15px;
+            border-radius: 15px;
+        }
+        form * {
+            margin: 5px;
+        }
+        form input[type="text"], input[type='email'],select{
+            padding:6px 15px;
+            width: 100%;
+        }
+        form button{
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: none;
+            background-color: royalblue;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 100px;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+        .d-flex{
+            display: flex;
+        }
+    </style>
+    <main id="main">
+        <h3> <span></span>  Feedback Form</h3>
+
+        <form name="feedbackform" class="feedbackform" autocomplete="off">
+            <div class="d-flex" style="align-items: center;">
+                <input type="text" name="fullName" id=""   />
+                <div class="hiddenField" hidden>✅</div></div>
+
+                
+
+            <div class="d-flex raidoEl" style="justify-content: space-between;">
+                <div class="d-flex">
+                    <input type="radio" name="type" id="General" value="General" />
+                    <label for="General">General</label>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" name="type" id="Technical" value="Technical" />
+                    <label for="Technical">Technical</label>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" name="type" id="Contributors" value="Contributors" />
+                    <label for="Contributors">Contributors</label>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div><input type="email" name="email" id="" /></div>
+                <div>
+                    <select name="country" id="">
+                        <option value="">--Select Country--</option>
+                        <option value="India">India</option>
+                        <option value="USA">USAmerican</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+            </div>
+
+            <div><textarea name="feedback" id="" cols="71" rows="6"></textarea></div>
+
+            <div class="d-flex">
+                <label for="agree" class="d-flex">
+                    <input type="checkbox" name="agree" value="true" id="agree" />
+                    <span>I agree</span>
+                </label>
+            </div>
+
+            <div><button>Submit</button></div>
+        </form>
+    </main>
+    <script src="/feedback.js"></script>
+</body>
+
+</html>
